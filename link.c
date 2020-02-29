@@ -1,15 +1,4 @@
 #include"link.h"
-typedef struct n{
-    int data;
-    struct node *next;
-    struct node *prev;
-}node;
-
-typedef struct l{
-    struct node *head;
-    struct node *tail;
-}list;
-
 void Insert(list* l,node *ptr){
     if (l->head==NULL){
         l->head=l->tail=ptr;
